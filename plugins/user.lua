@@ -1,10 +1,10 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
+  -- you can also add new plugins here as well:
+  -- add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
   -- {
   --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
+  --   event = "bufread",
   --   config = function()
   --     require("lsp_signature").setup()
   --   end,
@@ -12,9 +12,9 @@ return {
   "github/copilot.vim",
   lazy = false,
   {
-    "TimUntersberger/neogit",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
+    "timuntersberger/neogit",
+    version = "*", -- use for stability; omit to use `main` branch for the latest features
+    event = "verylazy",
     dependencies = {
       "sindrets/diffview.nvim",
     },
@@ -25,5 +25,15 @@ return {
         },
       }
     end,
+  },
+  {
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup({
+        Configuration here, or leave empty to use defaults
+      })
+      end,
+    },
   },
 }
