@@ -11,5 +11,7 @@ return {
   -- },
   "github/copilot.vim",
   "EdenEast/nightfox.nvim",
+  "nathanaelkane/vim-indent-guides",
+  "neoclide/coc.nvim",
   lazy = false,
 }
