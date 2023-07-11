@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-    ensure_installed = {
+  ensure_installed = {
     "bash",
     "css",
     "dockerfile",
@@ -11,7 +11,7 @@ return {
     "markdown",
     "python",
     "scss",
-    "toml",
+   "toml",
     "tsx",
     "typescript",
     "vim",
